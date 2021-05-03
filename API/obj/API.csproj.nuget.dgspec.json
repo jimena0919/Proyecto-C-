@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "L:\\Maico\\Documents\\WorkSpace\\DatingApp\\API\\API.csproj": {}
+    "A:\\WorkSpace\\DatingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "L:\\Maico\\Documents\\WorkSpace\\DatingApp\\API\\API.csproj": {
+    "A:\\WorkSpace\\DatingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "L:\\Maico\\Documents\\WorkSpace\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "A:\\WorkSpace\\DatingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "L:\\Maico\\Documents\\WorkSpace\\DatingApp\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\Maico\\.nuget\\packages\\",
-        "outputPath": "L:\\Maico\\Documents\\WorkSpace\\DatingApp\\API\\obj\\",
+        "projectPath": "A:\\WorkSpace\\DatingApp\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\eduer\\.nuget\\packages\\",
+        "outputPath": "A:\\WorkSpace\\DatingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "A:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Maico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eduer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

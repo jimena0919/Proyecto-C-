@@ -20,20 +20,20 @@ namespace API
     {
         private readonly IConfiguration _config;
 
-        public Startup(IConfiguration config)
+        public Startup(IConfiguration configuration)
         {
-            _config = config;
+            _config = configuration;
         }
 
-      
+
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
-        {
+        public void ConfigureServices(IServiceCollection services){
+
             services.AddDbContext<DataContext>(options =>{
                 options.UseSqlite(_config.GetConnectionString("DefaultConnection"));
             });
-            services.AddControllers();  
-            
+            services.AddControllers();
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,10 +42,11 @@ namespace API
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200"));
 
             app.UseRouting();
 
